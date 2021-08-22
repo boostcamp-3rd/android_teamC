@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="streetMapViewModel" type="kr.co.connect.boostcamp.livewhere.ui.map.StreetMapViewModel"/>
+    </data>
+    <FrameLayout
+            android:layout_width="match_parent" android:layout_height="match_parent">
+        <fragment
+                android:id="@+id/fragment_street_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.SupportStreetViewPanoramaFragment"/>
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_map"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/gradient_black_to_transparent"
+                app:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+                app:titleTextColor="@color/white"
+                onClickFinish="@{true}"
+                onTitleText="@{streetMapViewModel.addressLiveData}"
+                />
+    </FrameLayout>
+</layout>
