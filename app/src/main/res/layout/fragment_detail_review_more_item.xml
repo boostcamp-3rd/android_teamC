@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable name="uuid" type="String"/>
+        <variable
+                name="review"
+                type="kr.co.connect.boostcamp.livewhere.model.Review"/>
+        <variable
+                name="eventListener"
+                type="kr.co.connect.boostcamp.livewhere.ui.detail.DetailEventListener"/>
+    </data>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="@dimen/elevation_s"
+    >
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_small"
+                android:paddingBottom="@dimen/space_small"
+                android:background="@color/white">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/review_more_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    style="@style/BasicTv.HeadlineM.Bold"
+                    android:text="@{review.nickname}"
+                    android:paddingStart="@dimen/space_large"
+                    android:paddingEnd="@dimen/space_small"
+                    android:paddingBottom="@dimen/space_xx_small"
+                    android:textColor="@color/black"
+                    tools:text="하솜이 아빠"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/review_more_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/review_more_nickname"
+                    app:layout_constraintTop_toBottomOf="@id/review_more_nickname"
+                    style="@style/BasicTv.BodyS"
+                    android:paddingStart="@dimen/space_large"
+                    android:paddingBottom="@dimen/space_small"
+                    android:text="@{review.date}"
+                    tools:text="2019년 2월 15일"
+                    android:textColor="@color/gray"/>
+            <ImageButton
+                    android:id="@+id/review_delete_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete_black_24dp"
+                    android:background="@null"
+                    android:onClick="@{() -> eventListener.onClickItem(review)}"
+                    app:layout_constraintTop_toTopOf="@id/review_more_nickname"
+                    app:layout_constraintBottom_toBottomOf="@id/review_more_nickname"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:padding="@dimen/space_large"
+            />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/review_more_contents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/review_more_date"
+                    style="@style/BasicTv.BodyM.Bold"
+                    android:lineSpacingExtra="@dimen/space_xx_small"
+                    android:paddingStart="@dimen/space_large"
+                    android:paddingEnd="@dimen/space_median"
+                    android:text="@{review.contents}"
+                    android:textColor="@color/gray"
+                    tools:text="어릴 적 살았었는데 정말 조용하고 교통도 편리하고 좋은 동네였다고 생각해요 다시 이사가고 싶은 동네입니다."/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
