@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_xx_small">4dp</dimen>
+    <dimen name="space_x_small">8dp</dimen>
+    <dimen name="space_small">12dp</dimen>
+    <dimen name="space_median">16dp</dimen>
+    <dimen name="space_s_large">18dp</dimen>
+    <dimen name="space_large">20dp</dimen>
+    <dimen name="space_x_large">24dp</dimen>
+
+    <dimen name="elevation_xs">1dp</dimen>
+    <dimen name="elevation_s">2dp</dimen>
+    <dimen name="elevation_m">4dp</dimen>
+    <dimen name="elevation_l">6dp</dimen>
+
+    <dimen name="table_narrow">32dp</dimen>
+    <dimen name="table_normal">48dp</dimen>
+    <dimen name="table_double">56dp</dimen>
+    <dimen name="table_image">108dp</dimen>
+
+    <dimen name="search_et">288dp</dimen>
+    <dimen name="searchbar_height">92dp</dimen>
+
+    <dimen name="dropbar_header">40dp</dimen>
+    <dimen name="home_between_logo_and_search_bar_margin">60dp</dimen>
+
+    <!-- motionlayout 관련 dimen-->
+
+    <dimen name="fab_filter_main_margin_end">32dp</dimen>
+    <dimen name="fab_filter_main_margin_bottom">16dp</dimen>
+
+    <dimen name="detail_contents_bottom_padding">12dp</dimen>
+    <dimen name="detail_contents_horizontal_padding">4dp</dimen>
+    <dimen name="detail_rv_horizontal_margin">12dp</dimen>
+
+    <dimen name="detail_review_top_padding">33dp</dimen>
+    <dimen name="detail_review_bottom_padding">12dp</dimen>
+    <dimen name="detail_review_horizontal_padding">8dp</dimen>
+    <dimen name="detail_more_btn_height">28dp</dimen>
+
+    <dimen name="detail_review_more_btn_height">28dp</dimen>
+    <dimen name="detail_bar_chart_height">200dp</dimen>
+
+    <dimen name="margin_start_backdrop">8dp</dimen>
+    <dimen name="margin_end_backdrop">8dp</dimen>
+    <dimen name="margin_map_widget_default">12dp</dimen>
+    <dimen name="margin_map_widget_zoom_control_view_bottom">128dp</dimen>
+
+    <dimen name="map_vertical_guideline">654dp</dimen>
+    <dimen name="backdrop_toggle_left_margin">8dp</dimen>
+    <dimen name="detail_more_vertical_padding">20dp</dimen>
+    <dimen name="guideline_map_bottom_margin">650dp</dimen>
+    <dimen name="map_widget_size">48dp</dimen>
+    <dimen name="place_image_view_width">96dp</dimen>
+    <dimen name="place_image_view_height">64dp</dimen>
+    <dimen name="map_place_image_view_margin">8dp</dimen>
+
+    <dimen name="detail_post_review_contents_height">250dp</dimen>
+    <dimen name="backdrop_hide_top_margin">120dp</dimen>
+    <dimen name="fab_clone_size">64dp</dimen>
+    <dimen name="ml_float_btn_width">256dp</dimen>
+    <dimen name="ml_float_btn_padding_end">24dp</dimen>
+    <dimen name="item_search_recyclerview_height">112dp</dimen>
+    <dimen name="item_place_widget_margin_end">6dp</dimen>
+    <dimen name="empty_item_imageview_size">82dp</dimen>
+    <dimen name="search_item_imageview_size">64dp</dimen>
+    <dimen name="sort_by_area_img_margin">3dp</dimen>
+    <dimen name="sort_by_type_text_margin">3dp</dimen>
+    <dimen name="sort_by_year_img_margin">2dp</dimen>
+    <dimen name="sort_img_size">15dp</dimen>
+    <dimen name="arrow_size_map_activity">32dp</dimen>
+    <dimen name="map_place_image_view_expand_height">256dp</dimen>
+    <dimen name="logo_view_margin_start">8dp</dimen>
+    <dimen name="loading_lottie_view_size">100dp</dimen>
+
+    <dimen name="item_search_circle_view_size">36dp</dimen>
+    <dimen name="item_search_circle_view_margin">8dp</dimen>
+    <dimen name="item_search_circle_image_view_size">18dp</dimen>
+    <dimen name="item_search_function_view_margin">8dp</dimen>
+    <dimen name="filter_ml_elevation">4dp</dimen>
+    <dimen name="lottie_marker_size">64dp</dimen>
+    <dimen name="lottie_marker_half_size">32dp</dimen>
+    <dimen name="cancel_size_in_map">32dp</dimen>
+    <dimen name="motion_map_search_width">96dp</dimen>
+    <dimen name="motion_map_search_height">48dp</dimen>
+
+</resources>
