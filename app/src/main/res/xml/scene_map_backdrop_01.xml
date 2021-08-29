@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+        xmlns:motion="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <Transition
+            motion:constraintSetStart="@layout/motion_01_map_backdrop_start"
+            motion:constraintSetEnd="@layout/motion_01_map_backdrop_middle">
+        <OnSwipe
+                motion:touchAnchorId="@id/ll_place_detail"
+                motion:moveWhenScrollAtTop="true"
+                motion:dragDirection="dragUp"
+                motion:touchAnchorSide="top"
+                motion:maxAcceleration="0.3"/>
+    </Transition>
+    <Transition
+            motion:constraintSetStart="@layout/motion_01_map_backdrop_middle"
+            motion:constraintSetEnd="@layout/motion_01_map_backdrop_end">
+        <!-- recyclerview 중첩 이벤트 제거 moveWhenScrollAtTop = true-->
+        <OnSwipe
+                motion:touchAnchorId="@id/ll_place_detail"
+                motion:moveWhenScrollAtTop="true"
+                motion:dragDirection="dragUp"
+                motion:touchAnchorSide="top"
+                motion:maxAcceleration="0.3"/>
+        <KeyFrameSet>
+            <KeyAttribute motion:target="@id/iv_place_image"
+                          motion:framePosition="0"
+                          android:elevation="0dp"/>
+            <KeyAttribute motion:target="@id/scaleBarView"
+                          motion:framePosition="0"
+                          android:elevation="0dp"/>
+            <KeyAttribute motion:target="@id/logoView"
+                          motion:framePosition="0"
+                          android:elevation="0dp"/>
+        </KeyFrameSet>
+    </Transition>
+</MotionScene>
